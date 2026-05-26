@@ -46,7 +46,7 @@ function createParticle() {
   particle.innerHTML = "❤";
 
   particle.style.left = Math.random() * window.innerWidth + "px";
-  particle.style.fontSize = Math.random() * 20 + 10 + "px";
+  particle.style.fontSize = Math.random() * 25 + 10 + "px";
   particle.style.animationDuration = Math.random() * 5 + 5 + "s";
 
   document.body.appendChild(particle);

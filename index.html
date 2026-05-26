@@ -7,24 +7,35 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>❤️ ArtScience MatchMaker ❤️</h1>
+    <div class="info-box">
+      <h3>New method for shaping artscience</h3>
+      <p>
+        ArtScience matchmaker helps artscience find it's compatability with
+        other departments, mediums, approaches, ect.
+      </p>
+      <p>Suggestions are very welcome</p>
+    </div>
 
-      <div class="inputs">
-        <input type="text" id="name1" placeholder="First Name" />
-        <input type="text" id="name2" placeholder="Second Name" />
-      </div>
+    <div class="card">
+      <div class="container">
+        <h1>❤️ ArtScience MatchMaker ❤️</h1>
 
-      <button onclick="calculateLove()">Calculate</button>
-
-      <div class="heart-wrapper">
-        <div class="heart">
-          <div class="fill" id="fill"></div>
-          <div class="percent" id="percentage">0%</div>
+        <div class="inputs">
+          <input type="text" id="name1" placeholder="Department" />
+          <input type="text" id="name2" placeholder="..." />
         </div>
-      </div>
 
-      <h2 id="resultText"></h2>
+        <button onclick="calculateLove()">Calculate</button>
+
+        <div class="heart-wrapper">
+          <div class="heart">
+            <div class="fill" id="fill"></div>
+            <div class="percent" id="percentage">0%</div>
+          </div>
+        </div>
+
+        <h2 id="resultText"></h2>
+      </div>
     </div>
 
     <script src="script.js"></script>
