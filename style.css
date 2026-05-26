@@ -59,7 +59,7 @@ button:hover {
   position: relative;
   width: 200px;
   height: 200px;
-  background: #ff1744;
+  background: #a19f9f;
   clip-path: polygon(
     50% 90%,
     90% 55%,
@@ -107,7 +107,7 @@ button:hover {
   left: 0;
   width: 100%;
   height: 0%;
-  background: rgba(255, 255, 255, 0.45);
+  background: rgba(180, 0, 45, 0.95);
   transition: height 2s ease;
   z-index: 1;
 }
