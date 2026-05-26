@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff4e8a, #ff7676);
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+input {
+  padding: 18px;
+  margin: 12px;
+  border: none;
+  border-radius: 16px;
+  width: 280px;
+  font-size: 20px;
+  outline: none;
+}
+
+button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 12px;
+  background: white;
+  color: #ff2f6d;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+button:hover {
+  transform: scale(1.08);
+}
+
+/* HEART */
+
+.heart-wrapper {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.heart {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: #ff1744;
+  clip-path: polygon(
+    50% 90%,
+    90% 55%,
+    100% 30%,
+    85% 10%,
+    65% 5%,
+    50% 20%,
+    35% 5%,
+    15% 10%,
+    0% 30%,
+    10% 55%
+  );
+
+  box-shadow:
+    0 0 25px rgba(255, 23, 68, 0.7),
+    0 0 60px rgba(255, 23, 68, 0.5);
+  overflow: hidden;
+}
+
+/* FILL */
+
+.fill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: rgba(255, 255, 255, 0.45);
+  transition: height 2s ease;
+  z-index: 1;
+}
+
+/* PERCENT TEXT */
+
+.percent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 34px;
+  font-weight: bold;
+  color: white;
+  z-index: 2;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* RESULT */
+
+#resultText {
+  margin-top: 30px;
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+/* FLOATING HEARTS */
+
+.particle {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.7);
+  animation: floatUp linear infinite;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(100vh) scale(0.5);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-10vh) scale(1.5);
+    opacity: 0;
+  }
+}

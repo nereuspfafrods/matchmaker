@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love Match Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>❤️ Love Match ❤️</h1>
+
+      <div class="inputs">
+        <input type="text" id="name1" placeholder="First Name" />
+        <input type="text" id="name2" placeholder="Second Name" />
+      </div>
+
+      <button onclick="calculateLove()">Calculate</button>
+
+      <div class="heart-wrapper">
+        <div class="heart">
+          <div class="fill" id="fill"></div>
+          <div class="percent" id="percentage">0%</div>
+        </div>
+      </div>
+
+      <h2 id="resultText"></h2>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
